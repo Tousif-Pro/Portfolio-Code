@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -21,12 +21,6 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -47,11 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+ A passionate Full Stack Developer with hands-on experience from internships at DhruthZuci Tech Solutions and a solution-based company. I've built impactful projects like Book Villa and Sifraa, and I'm currently diving deep into LLMs and Generative AI to build cutting-edge applications. As an AWS Certified Cloud Practitioner, I leverage cloud infrastructure to deliver scalable solutions. I'm well-versed in the MERN stack and thrive in turning ideas into reality with clean, functional code. Constantly learning, I'm driven to innovate and create tech that makes a difference.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

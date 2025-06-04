@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import profilePic from "../assets/myprofilepick.jpg";
+import CanvasLoader from "./Loader";
 
 // Icons
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
@@ -61,7 +62,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/Tousif-design"
+              href="https://github.com/Tousif-Pro/Tousif-Pro"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400 transition-all duration-300 transform hover:scale-110 cursor-pointer"
@@ -69,7 +70,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/Tousif07"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#1DA1F2] transition-all duration-300 transform hover:scale-110 cursor-pointer"
@@ -98,9 +99,11 @@ const Hero = () => {
         </div>
       )}
 
-      {/* Canvas behind */}
+      {/* Canvas with loading indicator */}
       <div className="absolute inset-0 z-0">
-        <ComputersCanvas />
+        <Suspense fallback={<CanvasLoader />}>
+          <ComputersCanvas />
+        </Suspense>
       </div>
 
       {/* Scroll Indicator */}

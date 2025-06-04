@@ -24,8 +24,12 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-
 import dz_logo from "../assets/company/logo.png";
+import biks from "../assets/biks.png";
+import cloud from "../assets/cloud.png";
+import location from "../assets/location.png";
+import digital from "../assets/digital.png";
+import gitimage from "../assets/gitimage1.png";
 
 export const navLinks = [
   {
@@ -169,45 +173,18 @@ const experiences = [
   // },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Frontend Project",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "ACO – AI Cloud Optimizer is a smart cloud management system built with React, Vite, TailwindCSS, and TypeScript. It features a CRM client panel, intelligent cloud optimization, real-time dashboards, and AI-powered business insights. Ideal for enterprises to enhance productivity.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
@@ -215,16 +192,17 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: cloud,
+    source_code_link: "https://github.com/Tousif-Pro/Ai-Cloud-Optimizer",
+    live_link: "https://ai-cloud-optimizer.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Backend Project",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A high-performance Real-Time Location Tracking Application built with Node.js, Express, and Socket.io, enabling seamless and low-latency communication between clients and server. Perfectly suited for logistics, delivery services, and live ride tracking solutions.",
     tags: [
       {
-        name: "react",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
@@ -232,34 +210,91 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Socket.io",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: location ,
+    source_code_link: "https://github.com/Tousif-Pro/Realtime-Tracking-App",
+    live_link: "https://realtime-tracking-app-f0ah.onrender.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Ev Bikes",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "EV Bikes frontend prototype — a sleek, modern, and fully responsive website showcasing the future of electric bikes! This prototype focuses on a clean, interactive UI designed with the user experience front and center responsive design modern design for Ev bikes ",
     tags: [
       {
-        name: "nextjs",
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image:   biks,
+    source_code_link: "https://github.com/Tousif-Pro/EV-Bikes_WebApp",
+    live_link: "https://ev-bikes-web-app.vercel.app/",
+  },
+  {
+    name: "Landing Page",
+    description:
+      "A professional and captivating landing page for Digital Forge, built to showcase innovative digital solutions and services.Designed with a clean layout, responsive design.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: digital,
+    // source_code_link: "https://aquamarine-crostata-901fda.netlify.app/",
+    live_link: "https://aquamarine-crostata-901fda.netlify.app/",
+  },
+  {
+    name: "Git Hub Replica",
+    description:
+      "A professional and captivating A stunning front-end prototype replicating GitHub's clean interface — responsive, modern, and pixel-perfect.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gitimage,
+    // source_code_link: "https://aquamarine-crostata-901fda.netlify.app/",
+    live_link: "https://repo-similarity-hub.lovable.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const testimonials = [
+  {
+    name: "Angel",
+    text: "Thank you so much for all your help with the project! I couldn't have done it without you. Your support, ideas, and guidance really helped us a lot, and I've learned a lot from you. You truly made the project awesome!",
+  },
+  {
+    name: "Varsha",
+    text: "Agro Fresh Working with this team has been a game-changer for us! Their innovative solutions and dedication to our project have significantly improved our operations. I can't recommend them enough!",
+  },
+];
+
+export { services, technologies, experiences, projects, testimonials };
